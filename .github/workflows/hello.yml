@@ -6,7 +6,6 @@ jobs:
     steps:
       - name: hello-from-bash
         run: echo "Hello from Bash!"
-    steps:
       - name: hello-from-R
       - uses: actions/checkout@v3
       - uses: r-lib/actions/setup-r@v2
