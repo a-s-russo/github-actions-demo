@@ -22,4 +22,4 @@ jobs:
         with:
           push: true
           image: r_4.2.2
-          tags: ${{ github.head_ref }}_${{ github.sha }}
+          tags: ${{ github.head_ref }}-${{ github.sha }}
