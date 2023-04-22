@@ -21,4 +21,5 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           push: true
-          tags: brodrigues/r_env:{{ github.head_ref }}_${{ github.sha }}
+          image: r_4.2.2
+          tags: ${{ github.head_ref }}_${{ github.sha }}
