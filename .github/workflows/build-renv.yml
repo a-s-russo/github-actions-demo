@@ -22,6 +22,6 @@ jobs:
       - name: Build image and push to Docker Hub
         uses: docker/build-push-action@v4
         with:
-          tags: ${{ env.IMAGE_NAME }}:${{ github.ref.replace('refs/heads/', '') }}-${{ github.sha }}
+          tags: ${{ env.IMAGE_NAME }}:${{ github.head_ref }}-${{ github.sha }}
           image: ${{ env.IMAGE_NAME }}
           push: true
