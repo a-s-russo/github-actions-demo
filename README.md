@@ -1,3 +1,5 @@
-# ga_demo
+# Demo for Chapter 15 of Building Reproducible Analytical Pipelines with R
 
-Experimenting with Github Actions for the book "Building reproducible analytical pipelines with R"
+You can read the chapter here: https://raps-with-r.dev/ci_cd.html
+
+Each time a change gets pushed to this repo, a Docker image gets built and pushed to Docker Hub.
