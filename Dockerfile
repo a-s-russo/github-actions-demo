@@ -1,4 +1,4 @@
-FROM rocker/r-ver:4.2.2
+FROM rocker/r-ver:4.3.1
 
 RUN apt-get update && apt-get install -y \
     libglpk-dev \
@@ -21,8 +21,10 @@ RUN apt-get update && apt-get install -y \
     libxt-dev \
     unixodbc-dev \
     wget \
-    pandoc
+    pandoc \
+    make \
+    default-jdk
 
 RUN R -e "install.packages('remotes')"
 
-RUN R -e "remotes::install_github('rstudio/renv@0.16.0')"
+RUN R -e "remotes::install_github('rstudio/renv@v1.0.2')"
